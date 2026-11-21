@@ -1,0 +1,11 @@
+target/
+data/*.db
+data/*.db-journal
+*.class
+.idea/
+.metals/
+.bsp/
+.bloop/
+project/metals.sbt
+project/project/
+project/target/

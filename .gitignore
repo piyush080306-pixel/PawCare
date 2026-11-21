@@ -1,0 +1,32 @@
+# ===== Frontend: generated / dependencies =====
+frontend/node_modules/
+frontend/dist/
+frontend/.env.local
+frontend/.env.*.local
+
+# ===== Scala / sbt: build output =====
+project/target/
+project/project/target/
+project/project/project/
+*.class
+.bsp/
+.bloop/
+.metals/
+.idea/
+.vscode/
+project/metals.sbt
+
+# ===== Database (auto-created + seeded on first run) =====
+project/data/*.db
+project/data/*.db-journal
+project/data/*.db-wal
+project/data/*.db-shm
+project/data/*.db.verify-backup
+
+# ===== Logs =====
+*.log
+
+# ===== OS / editor noise =====
+.DS_Store
+Thumbs.db
+*.swp

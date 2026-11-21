@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PawCare — Animal Shelter Management</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-paw">🐾</span>
+        <div>
+          <h1>PawCare</h1>
+          <p>Animal Shelter System</p>
+        </div>
+      </div>
+
+      <nav id="nav">
+        <button data-page="dashboard" class="active"><span>▦</span> Dashboard</button>
+        <button data-page="animals"><span>🐶</span> Animals</button>
+        <button data-page="staff"><span>👥</span> Staff</button>
+        <button data-page="adoptions"><span>🏠</span> Adoptions</button>
+        <button data-page="health"><span>🩺</span> Health</button>
+      </nav>
+
+      <div class="sidebar-foot">
+        <div><span class="dot"></span> Server online</div>
+        <small>Scala 3 · SQLite · JDK HTTP</small>
+      </div>
+    </aside>
+
+    <main>
+      <header class="topbar">
+        <div>
+          <h2 id="page-title">Shelter Dashboard</h2>
+          <p id="page-sub">Live figures computed from stored shelter records</p>
+        </div>
+        <div class="topbar-actions">
+          <button class="btn ghost" id="refresh-btn">↻ Refresh</button>
+        </div>
+      </header>
+
+      <section id="content" class="content">
+        <div class="loading">Loading shelter data…</div>
+      </section>
+    </main>
+  </div>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-card" id="modal-card"></div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
